@@ -1,72 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>GetHerOutTheClub</title>
 
+    <!-- Pixel-font från Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Kopplar till CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- dansgolvet i bakgrunden. script.js fyller det med blinkande rutor, precis som i spelet -->
+
+    <!-- Blinkande dansgolv i bakgrunden -->
     <div id="golv" aria-hidden="true"></div>
 
-    <!-- HERO: namnet stort i mitten -->
+    <!-- STARTSIDA -->
     <header id="hero">
-        <p class="liten">GetHerOutTheClub</p>
-        <!-- BYT UT mot era namn -->
+
+        <p class="liten">✦ WELCOME TO ✦</p>
+
+        <p class="project-name">GET HER OUT THE CLUB</p>
+
+        <!-- BYT UT DITT NAMN HÄR -->
         <h1>DITT NAMN</h1>
-        <p class="liten">a sound-controlled rave game</p>
-        <a class="knapp" href="#video">PRESS START</a>
+
+        <p class="liten">A SOUND-CONTROLLED RAVE GAME</p>
+
+        <p class="decoration">★ ✦ ★ ✦ ★</p>
+
+        <a class="knapp" href="#om">PRESS START ↓</a>
+
     </header>
 
+
     <main>
-        <!-- ABOUT: ca 100 ord. Byt ut texten och namnen -->
+
+        <!-- OM PROJEKTET -->
         <section id="om">
-            <h2>ABOUT</h2>
+
+            <h2>ABOUT THE GAME</h2>
+
             <div class="ruta">
-                <p>GetHerOutTheClub is a game you play with your voice. A microphone listens to the room: the louder
-                    the sound, the further right the character moves. The dance floor scrolls forward on its own, so
-                    you have to use sound to dodge exes, spilled drinks and bottles on the way out of the club. When
-                    you crash, it is game over. The game also controls real stage lights during the rave.</p>
-                <p>We are [NAMN 1] and [NAMN 2], students who built the game, its design and the sound input
-                    together.</p>
+
+                <p>
+                    GetHerOutTheClub is an interactive rave-themed
+                    game controlled by sound. A microphone listens
+                    to the room, and the louder the sound, the further
+                    the character moves to the right. Players must
+                    navigate through a colourful nightclub, avoid
+                    obstacles such as exes, spilled drinks and bottles,
+                    and try to escape the club without crashing.
+                </p>
+
+                <p>
+                    We are [NAME 1] and [NAME 2], the creators
+                    behind the game. We worked together on the
+                    concept, visuals, coding and sound interaction.
+                    Our goal was to combine retro gaming with
+                    the chaotic atmosphere of a real rave.
+                </p>
+
             </div>
+
         </section>
 
-        <!-- VIDEO: 30-60 sekunder. Lägg filen i mappen media/ -->
+
+        <!-- VIDEO -->
         <section id="video">
-            <h2>DEMO</h2>
+
+            <h2>SEE IT IN ACTION</h2>
+
+            <p class="section-info">✦ OUR GAME DEMONSTRATION ✦</p>
+
             <video controls preload="metadata" poster="images/foto1.jpg">
+
                 <source src="media/demo.mp4" type="video/mp4">
-                Your browser can not play this video.
+
+                Your browser cannot play this video.
+
             </video>
+
         </section>
 
-        <!-- 5 FOTON: lägg filerna i mappen images/ och ändra alt-texten -->
+
+        <!-- FEM FOTON -->
         <section id="foton">
-            <h2>PHOTOS</h2>
+
+            <h2>THE EXPERIENCE</h2>
+
+            <p class="section-info">✦ A LOOK INSIDE OUR WORLD ✦</p>
+
             <div class="galleri">
-                <img src="images/foto1.jpg" alt="Beskriv foto 1">
-                <img src="images/foto2.jpg" alt="Beskriv foto 2">
-                <img src="images/foto3.jpg" alt="Beskriv foto 3">
-                <img src="images/foto4.jpg" alt="Beskriv foto 4">
-                <img src="images/foto5.jpg" alt="Beskriv foto 5">
+
+                <img src="images/foto1.jpg" alt="Project photo 1">
+
+                <img src="images/foto2.jpg" alt="Project photo 2">
+
+                <img src="images/foto3.jpg" alt="Project photo 3">
+
+                <img src="images/foto4.jpg" alt="Project photo 4">
+
+                <img src="images/foto5.jpg" alt="Project photo 5">
+
             </div>
+
         </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer>
+
         <p>GAME OVER? NEVER.</p>
-        <p class="liten">[NAMN 1] + [NAMN 2] / 2026</p>
+
+        <p class="liten">[NAME 1] + [NAME 2] / 2026</p>
+
+        <p class="footer-small">✦ MADE WITH LOVE & NEON ✦</p>
+
     </footer>
 
+
+    <!-- Kopplar till JavaScript -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
