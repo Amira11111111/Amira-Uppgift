@@ -456,3 +456,17 @@ footer .liten {
     }
 
 }
+
+/* länkar i textrutan: cyan neon, rosa när man pekar på dem */
+.ruta a {
+    color: var(--cyan);
+    text-shadow: 0 0 8px var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.ruta a:hover,
+.ruta a:focus-visible {
+    color: var(--rosa);
+    text-shadow: 0 0 8px var(--rosa);
+}
